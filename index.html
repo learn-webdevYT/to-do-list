@@ -1,18 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>To Do List</title>
+<!--Bootstrap-->
+<link href="style.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-    <h1>To Do List</h1>
-    <div class="container">
-        <input id="inputField" type="text"><button id="addToDo">+</button>
-        <div class="to-dos" id="toDoContainer">
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">To Do List</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+             
+            </ul>
+            
+          </div>
         </div>
+      </nav>
+<div class="container text-center my-5 box">
+<h1>Create Your To Do</h1><br>
+<input id="inputField" type="text" placeholder="Enter Task"/>
+<br><br>
+
+<button id="addToDo" class="btn btn-primary">Click to Add</button>
+<br><br><h2>Your To Do</h2>
+    <div class="card">
+      <div class="card-body">
+        <div class="to-dos" id="toDoContainer"></div>
+      </div>
     </div>
-    <script src="main.js"></script>
+
+<script src="main.js"></script>
 </body>
 </html>
