@@ -1,7 +1,5 @@
-html, body {
-    width: 50%;
-    margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
+body{
+    background-color:bisque;
 }
 
 .container {
@@ -12,15 +10,15 @@ html, body {
     width: 300px;
     height: 46px;
     border-width: 0;
-    border: 1px solid black;
+    border: 1px solid rgb(18, 18, 18);
     outline: none;
     font-size: 25px;
     vertical-align: middle;
 }
 
 #addToDo {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 350px;
     border: 1px solid black;
     vertical-align: middle;
     font-size: 30px;
@@ -34,4 +32,8 @@ html, body {
 
 .to-dos {
     margin-top: 25px;
+  
+}
+.card-body{
+    background-color:aquamarine;
 }
